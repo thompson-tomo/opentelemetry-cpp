@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787290739895,
+  "lastUpdate": 1787290811653,
   "repoUrl": "https://github.com/thompson-tomo/opentelemetry-cpp",
   "entries": {
     "OpenTelemetry-cpp api Benchmark": [
@@ -399465,6 +399465,132 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/thompson-tomo/opentelemetry-cpp/commit/7ea30f49b733223b5577ef3166adc4d29d07ed34"
         },
         "date": 1787270365255,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "OtlpRecordableFixture/RecordMinimalSpan",
+            "value": 737.6263230069483,
+            "unit": "ns/iter",
+            "extra": "iterations: 236835\ncpu: 731.4661853189101 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordNominalSpan",
+            "value": 1356.0322775940351,
+            "unit": "ns/iter",
+            "extra": "iterations: 101361\ncpu: 1332.5555489785013 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithAttributes/attribute_count:1",
+            "value": 861.8256442954186,
+            "unit": "ns/iter",
+            "extra": "iterations: 188661\ncpu: 863.5800562915293 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithAttributes/attribute_count:10",
+            "value": 1674.5426902944473,
+            "unit": "ns/iter",
+            "extra": "iterations: 99613\ncpu: 1673.6950699207327 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithAttributes/attribute_count:128",
+            "value": 13308.386200840034,
+            "unit": "ns/iter",
+            "extra": "iterations: 10300\ncpu: 13250.171165048836 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithEvents/event_count:1",
+            "value": 1001.7033554837334,
+            "unit": "ns/iter",
+            "extra": "iterations: 132699\ncpu: 1001.3379528102802 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithEvents/event_count:10",
+            "value": 3667.475213679203,
+            "unit": "ns/iter",
+            "extra": "iterations: 39019\ncpu: 3664.9741151735425 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithEvents/event_count:128",
+            "value": 37786.36375400577,
+            "unit": "ns/iter",
+            "extra": "iterations: 3719\ncpu: 37694.60688356895 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithLinks/link_count:1",
+            "value": 1119.934936063574,
+            "unit": "ns/iter",
+            "extra": "iterations: 130070\ncpu: 1118.5873760277343 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithLinks/link_count:10",
+            "value": 3766.9196567478048,
+            "unit": "ns/iter",
+            "extra": "iterations: 37581\ncpu: 3764.083100502671 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithLinks/link_count:128",
+            "value": 47126.01117653145,
+            "unit": "ns/iter",
+            "extra": "iterations: 3818\ncpu: 37580.99711890681 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpPopulateRequest/span_count:1",
+            "value": 0.9728626646182328,
+            "unit": "us/iter",
+            "extra": "iterations: 163565\ncpu: 0.8999655610919197 us\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpPopulateRequest/span_count:512",
+            "value": 62.86263082923556,
+            "unit": "us/iter",
+            "extra": "iterations: 2179\ncpu: 60.50368288205595 us\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterEmptySpans",
+            "value": 12.270982368107893,
+            "unit": "ns/iter",
+            "extra": "iterations: 11127000\ncpu: 12.269381144962704 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterSparseSpans",
+            "value": 67.56099343996996,
+            "unit": "ns/iter",
+            "extra": "iterations: 2052000\ncpu: 67.55556140350879 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterDenseSpans",
+            "value": 440.18382966704087,
+            "unit": "ns/iter",
+            "extra": "iterations: 321000\ncpu: 440.1844610591902 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_otlp_grpc_with_collector",
+            "value": 1655656.783307185,
+            "unit": "ns/iter",
+            "extra": "iterations: 366\ncpu: 380686.27049180336 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93f16f35285e34adc3eb837c0277f0def7ccbe04",
+          "message": "Bump docker/setup-buildx-action from 4.2.0 to 4.3.0 (#4459)\n\nBumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 4.2.0 to 4.3.0.\n- [Release notes](https://github.com/docker/setup-buildx-action/releases)\n- [Commits](https://github.com/docker/setup-buildx-action/compare/bb05f3f5519dd87d3ba754cc423b652a5edd6d2c...37fe631027851001ddb9b187196cc803df7f5f0e)\n\n---\nupdated-dependencies:\n- dependency-name: docker/setup-buildx-action\n  dependency-version: 4.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-08-20T19:41:10+02:00",
+          "tree_id": "e240f53f08525ff45d6cd96b0b304381accc27e7",
+          "url": "https://github.com/thompson-tomo/opentelemetry-cpp/commit/93f16f35285e34adc3eb837c0277f0def7ccbe04"
+        },
+        "date": 1787290780425,
         "tool": "googlecpp",
         "benches": [
           {
