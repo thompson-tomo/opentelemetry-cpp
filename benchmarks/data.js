@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787781066162,
+  "lastUpdate": 1787781139877,
   "repoUrl": "https://github.com/thompson-tomo/opentelemetry-cpp",
   "entries": {
     "OpenTelemetry-cpp api Benchmark": [
@@ -406948,6 +406948,132 @@ window.BENCHMARK_DATA = {
             "value": 2669518.1926091514,
             "unit": "ns/iter",
             "extra": "iterations: 288\ncpu: 481558.111111111 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06423fb79c1a1b1fb155f5bd66b7661fa7aaec6a",
+          "message": "Bump curl from 8.21.0 to 8.21.0.bcr.1 (#4481)\n\nBumps [curl](https://github.com/curl/curl) from 8.21.0 to 8.21.0.bcr.1.\n- [Release notes](https://github.com/curl/curl/releases)\n- [Changelog](https://github.com/curl/curl/blob/master/CHANGES.md)\n- [Commits](https://github.com/curl/curl/commits)\n\n---\nupdated-dependencies:\n- dependency-name: curl\n  dependency-version: 8.21.0.bcr.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-08-26T15:39:35+02:00",
+          "tree_id": "5bb1efb08eb34e176c08a3eb60002b2800c2dbca",
+          "url": "https://github.com/thompson-tomo/opentelemetry-cpp/commit/06423fb79c1a1b1fb155f5bd66b7661fa7aaec6a"
+        },
+        "date": 1787781110111,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "OtlpRecordableFixture/RecordMinimalSpan",
+            "value": 2177.6486750205095,
+            "unit": "ns/iter",
+            "extra": "iterations: 76099\ncpu: 2234.4935675895777 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordNominalSpan",
+            "value": 3353.267153398079,
+            "unit": "ns/iter",
+            "extra": "iterations: 41503\ncpu: 3394.2617642098526 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithAttributes/attribute_count:1",
+            "value": 2494.528128903196,
+            "unit": "ns/iter",
+            "extra": "iterations: 54355\ncpu: 2522.061871033132 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithAttributes/attribute_count:10",
+            "value": 4346.745376729677,
+            "unit": "ns/iter",
+            "extra": "iterations: 32599\ncpu: 4303.079665019996 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithAttributes/attribute_count:128",
+            "value": 24148.758421552942,
+            "unit": "ns/iter",
+            "extra": "iterations: 5734\ncpu: 24173.494942447862 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithEvents/event_count:1",
+            "value": 3003.3785726565184,
+            "unit": "ns/iter",
+            "extra": "iterations: 47305\ncpu: 2792.1043018702326 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithEvents/event_count:10",
+            "value": 7470.935450688568,
+            "unit": "ns/iter",
+            "extra": "iterations: 18454\ncpu: 7485.042050501611 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithEvents/event_count:128",
+            "value": 70619.27970927309,
+            "unit": "ns/iter",
+            "extra": "iterations: 2043\ncpu: 69444.07733724908 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithLinks/link_count:1",
+            "value": 3016.75841392085,
+            "unit": "ns/iter",
+            "extra": "iterations: 44833\ncpu: 3076.802779201623 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithLinks/link_count:10",
+            "value": 6840.450393523717,
+            "unit": "ns/iter",
+            "extra": "iterations: 17847\ncpu: 6824.622457558041 ns\nthreads: 1"
+          },
+          {
+            "name": "OtlpRecordableFixture/RecordSpanWithLinks/link_count:128",
+            "value": 59912.108099714664,
+            "unit": "ns/iter",
+            "extra": "iterations: 2393\ncpu: 59386.90639364842 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpPopulateRequest/span_count:1",
+            "value": 1.663846349249345,
+            "unit": "us/iter",
+            "extra": "iterations: 83245\ncpu: 1.6529747852723848 us\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpPopulateRequest/span_count:512",
+            "value": 110.56152785696635,
+            "unit": "us/iter",
+            "extra": "iterations: 1312\ncpu: 109.88516920731715 us\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterEmptySpans",
+            "value": 15.748498218307079,
+            "unit": "ns/iter",
+            "extra": "iterations: 9150000\ncpu: 15.748598797814207 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterSparseSpans",
+            "value": 79.81363859920252,
+            "unit": "ns/iter",
+            "extra": "iterations: 1757000\ncpu: 79.81444906089929 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterDenseSpans",
+            "value": 560.2741621405005,
+            "unit": "ns/iter",
+            "extra": "iterations: 251000\ncpu: 560.188657370518 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_otlp_grpc_with_collector",
+            "value": 2534566.4406487336,
+            "unit": "ns/iter",
+            "extra": "iterations: 287\ncpu: 483430.67595818813 ns\nthreads: 1"
           }
         ]
       }
